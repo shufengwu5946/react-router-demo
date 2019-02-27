@@ -1,25 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import App1 from './example/App1';
+import ParamsExample from './example/ParamsExample';
+import AuthExample from './example/AuthExample';
+import CustomLinkExample from './example/CustomLinkExample';
+import PreventingTransitionsExample from './example/PreventingTransitionsExample';
+import NoMatchExample from './example/NoMatchExample';
+import RecursiveExample from './example/RecursiveExample';
+import SidebarExample from './example/SidebarExample';
+import AnimationExample from './example/AnimationExample';
+import AmbiguousExample from './example/AmbiguousExample';
+import RouteConfigExample from './example/RouteWithSubRoutes';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <App1></App1>
+        <hr/>
+        <hr/>
+        <ParamsExample></ParamsExample>
+        <hr/>
+        <hr/>
+        <AuthExample></AuthExample>
+        <hr/>
+        <hr/>
+        <CustomLinkExample></CustomLinkExample>
+        <hr/>
+        <hr/>
+        <PreventingTransitionsExample></PreventingTransitionsExample>
+        <hr/>
+        <hr/>
+        <NoMatchExample></NoMatchExample>
+        <hr/>
+        <hr/>
+        {/* <RecursiveExample></RecursiveExample> */}
+        <SidebarExample></SidebarExample>
+        <hr/>
+        <hr/>
+        <AnimationExample></AnimationExample>
+        <hr/>
+        <hr/>
+        <AmbiguousExample></AmbiguousExample>
+        <hr/>
+        <hr/>
+        <RouteConfigExample></RouteConfigExample>
       </div>
     );
   }
